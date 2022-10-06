@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image.jpg" type="image/x-icon" >
+    <title>4P's Order</title>
+
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="wrap">
+        <div>
+            <div class="wrap-top"></div>
+            <div class="logo">
+                <img class="image-logo" src="image.jpg">
+            </div>
+            <div class="brand">Your order<br>from Pizza 4P's</div>
+        </div>
+        <div class="wrap-bottom">
+            <div class="pizza"> 
+                <div class="pizza-options">Menu</div>
+                <div class="pizza-choice"><i>
+                    
+                    <span class="quantity">
+                        <span class="text-1">Pizza Margherita | Medium </span> 
+                        <button class="sub" id="decreaseButton" onclick="decreaseOrder()">-</button>
+                        <span class="numberOfOrder" id="numberOfOrder">1</span>
+                        <button class="plus" id="increaseButton" onclick="increaseOrder()">+</button>
+                        <span class="price" id="price-1">150000</span>
+                    </span>
+                    <br>
+                    
+                    <span class="quantity">
+                        <span  class="text-2">Pizza Parma Ham | Small</span> 
+                        <button class="sub" id="decreaseButton" onclick="decreaseOrder2()">-</button>
+                        <span class="numberOfOrder" id="numberOfOrder">1</span>
+                        <button class="plus" id="increaseButton" onclick="increaseOrder2()">+</button>
+                        <span class="price" id="price-2">280000</span>
+                    </span>
+                    <br>
+                    
+                    <span class="quantity">
+                        <span  class="text-3">Pizza Milano | Lagre</span>
+                        <button class="sub" id="decreaseButton" onclick="decreaseOrder1()">-</button>
+                        <span class="numberOfOrder" id="numberOfOrder">1</span>
+                        <button class="plus" id="increaseButton" onclick="increaseOrder1()">+</button>
+                        <span class="price" id="price-3">750000</span>
+                    </span>
+                    <br>
+                    </i>
+                </div>
+            </div>
+            <div class="total">
+                <div  class="subtotal"><span>Subtotal: </span><span class="vnd"  id="subtotal">0</span></div><br>
+                <div class="ship"><span>Shipping: </span><span class="vnd" id="ship">20000</span></div><br>
+                <div  class="totalamount" ><span>Total Amount: </span><span class="vnd" id="totalamount">1200000</span></div>    
+            </div>
+            <div class="check-out" onclick="calculateTotal()">
+                <p class="text-4" >Checkout</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
